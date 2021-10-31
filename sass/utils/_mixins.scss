@@ -1,0 +1,16 @@
+@mixin bordered($color) {
+  border-bottom: 1px solid $color;
+}
+@mixin centeredFlex($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+@mixin background-image($img, $background-position, $background-size) {
+  background-image: url('#{$path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  background-position: $background-position;
+  background-size: $background-size;
+}
+@mixin btn {
+}

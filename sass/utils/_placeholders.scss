@@ -1,0 +1,55 @@
+%notification {
+  background-color: blue;
+  font-size: 20px;
+  padding: 20px;
+}
+// %list {
+// padding: 0;
+// margin: 0;
+// list-style: none;
+// }
+
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+%align-center {
+  display: flex;
+  align-items: center;
+}
+%flexCentered {
+  display: flex;
+  justify-content: center;
+}
+%align-baseline {
+  display: flex;
+  align-items: baseline;
+}
+%block-centered {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+%centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%text-centered {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+%inline-block-text {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+%text-align {
+  display: flex;
+  text-align: center;
+}
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

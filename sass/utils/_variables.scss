@@ -1,0 +1,53 @@
+:root {
+  --projects-list-gap: 30px;
+  --team-list-gap: 30px;
+}
+
+// color palette
+$colors: (
+  'primary': white,
+  'secondary': #2f303a,
+  'error': red,
+  'info': blue,
+  'blue': #188ce8,
+  'accent': #2196f3,
+  'gray-text': #757575,
+  'dark-title': #212121,
+  'light-color': #ffffff,
+  'gray-light': #ececec,
+);
+
+$lightgray-color: #afb1b8;
+$second-color: #000000;
+$bg-color: #ffffff;
+$text-color: #757575;
+$accent-color: #2196f3;
+$title-color: #212121;
+$secondary-color: #2f303a;
+$color: #ececec;
+$btn-color: #188ce8;
+$bg-fill: #f5f4fa;
+$border-color: #eeeeee;
+$dark-blur: rgba(117, 117, 117, 0.5);
+$light-grey: rgba(255, 255, 255, 0.6);
+$white-blur: rgba(255, 255, 255, 0.9);
+$blue-blur: rgba(33, 150, 243, 0.8);
+// borders
+$base-border-radius: 4px;
+$border-radius: 0px 0px 4px 4px;
+$base-border-thickness: 1px;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// box-shadow
+$box-lighter-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$base-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$background-position: center;
+$background-size: cover;
+
+// $icons: 'facebook', 'twitter', 'linkedin', 'instagram';

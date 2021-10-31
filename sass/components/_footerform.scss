@@ -1,0 +1,67 @@
+.form-field {
+  @extend %block-centered;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+  background-color: $secondary-color;
+}
+.fields {
+  display: flex;
+}
+.text-sign {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $bg-color;
+  margin-bottom: 20px;
+}
+.email-box::placeholder {
+  @extend %align-center;
+
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  margin-right: 10px;
+  color: $light-grey;
+}
+
+.email-box {
+  background-color: $secondary-color;
+  border-radius: 4px;
+  border: 1px solid $light-grey;
+  width: 358px;
+  height: 50px;
+  box-shadow: $base-box-shadow;
+  padding: 15px;
+  outline: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: $accent-color;
+    color: $bg-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.button-submit {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  cursor: pointer;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $bg-color;
+  margin-left: 12px;
+  letter-spacing: 0.06em;
+  @extend %text-centered;
+}
+.send-icon {
+  margin-left: 10px;
+  fill: $bg-color;
+}
