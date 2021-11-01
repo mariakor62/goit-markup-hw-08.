@@ -22,39 +22,41 @@
 
 <body>
     <!--Шапка-->
-    <header class="page-header">
+    <!-- <header class="page-header">
         <nav class="page-header__nav container">
             <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
-            <ul class="site-nav">
-                <li class="site-nav__item"><a class="site-nav__link site-nav__link--current"
-                        href="./index.html">Студия</a>
-                </li>
-                <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-nav__item"><a class="site-nav__link" href="/">Контакты</a>
-                </li>
-            </ul>
-            <ul class="header-right">
-                <li class="header-right__contact">
-                    <a href="" class="header-right__link">
-                        <svg class="header-right__icon envelope">
-                            <use href="./images/icons.svg#icon-envelope" width="16" height="12">
-                            </use>
-                        </svg>
-                        <p>info@devstudio.com</p>
-                    </a>
-                </li>
-                <li class="header-right__contact">
-                    <a href="" class="header-right__link">
-                        <svg class="header-right__icon smartphone">
-                            <use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
-                        </svg>
-                        <p>+38 096 111 11 11</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="menu-container id=" menu-container" data-menu>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current"
+                            href="./index.html">Студия</a>
+                    </li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="/">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="header-right">
+                    <li class="header-right__contact">
+                        <a href="" class="header-right__link">
+                            <svg class="header-right__icon envelope">
+                                <use href="./images/icons.svg#icon-envelope" width="16" height="12">
+                                </use>
+                            </svg>
+                            <p>info@devstudio.com</p>
+                        </a>
+                    </li>
+                    <li class="header-right__contact">
+                        <a href="" class="header-right__link">
+                            <svg class="header-right__icon smartphone">
+                                <use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
+                            </svg>
+                            <p>+38 096 111 11 11</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
+    </header> -->
     <main>
         <!--Герой-->
         <section class="hero">
@@ -118,7 +120,7 @@
             </div>
         </section>
         <!--Галерея-->
-        <section class="cards section">
+        <!-- <section class="cards section">
             <div class="cards__container">
                 <h2 class="cards__title">Чем мы занимаемся</h2>
                 <ul class="cards__list">
@@ -149,9 +151,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Команда компании-->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="team container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -322,9 +324,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Постоянные клиенты-->
-        <section class="customers section">
+        <!-- <section class="customers section">
             <div class="customers__container">
                 <h2 class="customers__title">Постоянные клиенты</h2>
                 <ul class="customers__list">
@@ -380,10 +382,10 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
     </main>
     <!--Контакты-->
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="footer-contacts container">
             <div class="contact-items">
                 <a class="contact-items__logo" href="/"> <span class="web">Web</span><span
@@ -454,7 +456,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" data-modal-close class="button-close">
@@ -514,6 +516,10 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
