@@ -34,7 +34,7 @@ ul {
 img {
   max-width: 100%;
   display: block;
-  height: 0 auto;
+  height: auto;
 }
 .hidden {
   position: absolute;
@@ -63,6 +63,6 @@ img {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1170px;
   }
 }
