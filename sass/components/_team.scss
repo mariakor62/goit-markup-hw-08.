@@ -54,6 +54,7 @@
 }
 .team .section {
   @media screen and (min-width: 768px) {
+    width: 768px;
     padding-top: 0;
   }
 }
@@ -86,15 +87,16 @@
 
 .member {
   width: 100%;
+  margin-left: 30px;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
   @media screen and (min-width: 480px) {
+    width: 480px;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
     background: $bg-color;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
