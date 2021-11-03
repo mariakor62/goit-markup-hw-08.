@@ -1,5 +1,6 @@
 .team {
-  // padding-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $bg-fill;
 }
 .media {
@@ -52,17 +53,17 @@
   letter-spacing: 0.03em;
   color: $title-color;
 }
-.team .section {
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-top: 0;
-  }
-}
+// .team .section {
+//   @media screen and (min-width: 768px) {
+//    width: 768px;
+//     padding-top: 0;
+//   }
+// }
 .team__list {
+  margin-bottom: -30px;
   @media screen and (min-width: 480px) {
     padding: 0 15px;
     padding-top: 50px;
-    // margin-left: -30px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -87,12 +88,12 @@
 
 .member {
   width: 100%;
-  margin-left: 30px;
+  margin-bottom: 30px;
+  // margin-left: 30px;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
   @media screen and (min-width: 480px) {
     width: 480px;
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
