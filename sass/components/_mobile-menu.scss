@@ -4,21 +4,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
   background-color: aqua;
-}
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  //   background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
 }
 .menu-toggle {
   position: absolute;
@@ -27,14 +17,15 @@
   justify-content: center;
   cursor: pointer;
 
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $bg-color;
-  border-radius: 50%;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  //   border: 1px solid rgba(0, 0, 0, 0.1);
+  //   background-color: $bg-color;
+  //   border-radius: 50%;
   margin-top: 8px;
   margin-right: 8px;
   fill: $second-color;
@@ -46,23 +37,17 @@
   }
 }
 
-// .menu-container__list {
-//   width: 50px;
-//   height: 50px;
-//   background-color: tomato;
-// }
 .mobile-menu__list {
-  //   position: relative;
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-top: 48px;
-  margin-right: 40px;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 302px;
 }
 
 .mobile-menu__item {
   margin-bottom: 32px;
-
   outline: none;
   font-family: 'Roboto';
   font-style: normal;
@@ -78,19 +63,34 @@
 .mobile-right {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  margin-right: 40px;
-  margin-bottom: 64px;
+  //   margin-top: 100px;
+  margin-left: 40px;
 }
 .mobile-right__contact {
   margin-bottom: 32px;
 }
 .mobile-media {
   display: flex;
-  justify-content: center;
-  margin-bottom: 48px;
+  margin-left: 40px;
+  margin-right: -10px;
 }
-.mobile-menu__item {
-  margin-left: 20px;
+.mobile-media__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
   flex-basis: calc(100% / 4 - 20px);
+  margin-left: 10px;
+  margin-right: 0;
+}
+.mobile-media__item:last-child {
+  margin-right: 0;
+}
+.vertical-line {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  height: 22px;
+  margin-left: 10px;
 }
