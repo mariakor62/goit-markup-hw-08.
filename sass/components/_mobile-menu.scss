@@ -50,10 +50,7 @@
   .menu-open-btn span::after {
     top: 7px;
   }
-  .menu-open-btn .active:before {
-    transform: rotate(45deg);
-    outline: 1px solid tomato;
-  }
+
   .menu-container {
     position: fixed;
     top: 0;
@@ -62,7 +59,7 @@
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: yellow;
+    // background-color: yellow;
     transform: translateY(0);
     transition: transform 250ms ease-in-out;
   }
@@ -87,9 +84,19 @@
   cursor: pointer;
   background-color: $accent-color;
 }
-
+.menu-button {
+  outline: 1px solid red;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
 .menu-toggle {
-  outline: 1px solid tomato;
+  outline: 1px solid purple;
   position: absolute;
   width: 40px;
   height: 40px;

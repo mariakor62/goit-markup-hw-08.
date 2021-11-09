@@ -1459,11 +1459,6 @@ img {
   .menu-open-btn span::after {
     top: 7px;
   }
-  .menu-open-btn .active:before {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    outline: 1px solid tomato;
-  }
   .menu-container {
     position: fixed;
     top: 0;
@@ -1472,7 +1467,6 @@ img {
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: yellow;
     -webkit-transform: translateY(0);
             transform: translateY(0);
     -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1509,8 +1503,23 @@ img {
   background-color: #2196f3;
 }
 
+.menu-button {
+  outline: 1px solid red;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
 .menu-toggle {
-  outline: 1px solid tomato;
+  outline: 1px solid purple;
   position: absolute;
   width: 40px;
   height: 40px;
