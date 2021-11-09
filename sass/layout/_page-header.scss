@@ -1,12 +1,17 @@
 .page-header {
   // 480
   position: fixed;
+  width: 100%;
   height: 60px;
   padding: 10px 0 10px;
-  background-color: $bg-color;
-  z-index: 50;
+  background-color: transparent;
+  // z-index: 50;
+
   // 1200
-  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 48px;
+  }
   @include bordered($color);
   &__nav {
     @extend %align-center;
