@@ -66,3 +66,8 @@ img {
     width: 1200px;
   }
 }
+.cards {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
