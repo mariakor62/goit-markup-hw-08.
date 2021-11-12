@@ -471,7 +471,7 @@ img {
 
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 .features__container {
@@ -752,6 +752,12 @@ img {
 }
 
 .team {
+  padding-bottom: 0;
+}
+
+.team .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -843,7 +849,7 @@ img {
 }
 
 .team__list .member {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 30px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -897,12 +903,11 @@ img {
 }
 
 .customers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 0;
 }
 
 .customers__container {
-  padding: 0 15px;
+  padding: 60px 15px;
 }
 
 .customers__list {

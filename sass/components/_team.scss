@@ -1,6 +1,9 @@
 .team {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-bottom: 0;
+}
+.team .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $bg-fill;
 }
 .team__title {
@@ -86,7 +89,7 @@
   // }
 
   .member {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
     // margin-left: 30px;
     background: $bg-color;
