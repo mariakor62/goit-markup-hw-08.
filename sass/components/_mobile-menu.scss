@@ -1,3 +1,6 @@
+// .body.modal-open {
+// overflow: hidden;
+// }
 // .menu-open-btn {
 // display: none;
 // }
@@ -42,7 +45,7 @@
     // right: 15px;
     margin-left: auto;
     // position: relative;
-    z-index: 8;
+    // z-index: 8;
     cursor: pointer;
     background-color: transparent;
     outline: 1px solid red;
@@ -166,7 +169,7 @@
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    // background-color: yellow;
+    background-color: yellow;
     transform: translateY(0);
     transition: transform 250ms ease-in-out;
   }
@@ -204,7 +207,7 @@
 //   }
 // }
 .menu-toggle {
-  outline: 1px solid red;
+  outline: 1px solid black;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -214,14 +217,14 @@
 .menu-toggle .icon-cross {
   display: none;
 }
-.menu-toggle.is-open .icon-cross {
+.menu-toggle .is-open .icon-cross {
   display: block;
 }
-.menu-toggle.is-open .icon-menu {
+.menu-toggle .is-open .icon-menu {
   display: none;
 }
 .menu-toggle {
-  outline: 1px solid purple;
+  outline: 1px solid green;
   position: absolute;
   width: 40px;
   height: 40px;

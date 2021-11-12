@@ -1,3 +1,8 @@
+.cards {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .cards__title {
   padding-top: 0;
   margin-bottom: 50px;
