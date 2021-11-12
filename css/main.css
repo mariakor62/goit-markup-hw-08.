@@ -141,16 +141,7 @@ img {
           justify-content: center;
 }
 
-.footer-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.contact-items, .footer-right, .form-field {
+.contact-items, .form-field {
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -974,11 +965,19 @@ img {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 60px 0 60px;
   background-color: #2f303a;
+}
+
+.footer-contacts {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact-items__address {
@@ -1003,6 +1002,13 @@ img {
 }
 
 .footer-right {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 70px;
   width: 206px;
   height: 80px;

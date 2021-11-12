@@ -1,11 +1,17 @@
 .footer {
-  display: flex;
+  display: block;
+  justify-content: space-between;
+  // flex-wrap: wrap;
   padding: 60px 0 60px;
   background-color: $secondary-color;
-  &-contacts {
-    @extend %align-baseline;
-  }
 }
+.footer-contacts {
+  display: block;
+  justify-content: space-between;
+  // align-items: baseline;
+  //   @extend %align-baseline;
+}
+
 .contact-items {
   @extend %block-centered;
   &__address {
@@ -31,7 +37,10 @@
   color: $bg-color;
 }
 .footer-right {
-  @extend %block-centered;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  // @extend %block-centered;
   margin-left: 70px;
   width: 206px;
   height: 80px;
