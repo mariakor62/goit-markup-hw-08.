@@ -1,33 +1,59 @@
 .footer {
-  display: block;
-  justify-content: space-between;
+  width: 100%;
+
   // flex-wrap: wrap;
-  padding: 60px 0 60px;
+  padding: 60px 0;
   background-color: $secondary-color;
 }
-.footer-contacts {
-  display: block;
-  justify-content: space-between;
-  // align-items: baseline;
+.footer-contacts .container {
+  width: 100%;
+  // padding: 60px 0 60px;
+  // display: block;
+  // flex-wrap: wrap;
   //   @extend %align-baseline;
+  margin: 0 15px;
 }
-
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+}
+.sign-in {
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 60px;
+}
 .contact-items {
-  @extend %block-centered;
-  &__address {
-    margin-top: 20px;
-  }
-  &__text {
-    margin-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  .contact-items {
+    @extend %block-centered;
+    // &__address {
+    // margin-top: 20px;
+    // }
+    &__text {
+      margin-bottom: 9px;
+    }
   }
 }
 .list-icons {
   @extend %flexCentered;
 }
+.contact-items__address,
+.contact-items__phone {
+  text-align: center;
+}
 .contact-items__phone {
   margin-top: 9px;
 }
-
+.contact-items__logo {
+  margin-bottom: 20px;
+}
 .contact-items__address {
   font-style: normal;
   font-weight: 400;
@@ -37,12 +63,15 @@
   color: $bg-color;
 }
 .footer-right {
-  display: block;
-  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+  // flex-wrap: wrap;
   // @extend %block-centered;
-  margin-left: 70px;
-  width: 206px;
+  // margin-left: 70px;
+  // width: 206px;
   height: 80px;
 }
 .footer-link {
