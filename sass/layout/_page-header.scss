@@ -1,9 +1,27 @@
 .page-header {
+  position: relative;
+  z-index: 2;
+}
+.page-header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0 10px;
+  background-color: $bg-color;
+  z-index: 50;
+}
+@media screen and (max-width: 767px) {
+  width: 100%;
+  height: 48px;
+}
+
+.page-header {
   @include bordered($color);
   &__nav {
     @extend %align-center;
   }
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -14,6 +32,13 @@
     color: $title-color;
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .site-nav {
+//     display: none;
+//   }
+// }
+
 .site-nav__item {
   position: relative;
   margin-left: 50px;
@@ -44,6 +69,11 @@
     margin-left: 30px;
   }
 }
+// @media screen and (max-width: 767px) {
+//   .header-right {
+//     display: none;
+//   }
+// }
 .header-right__contact:last-child {
   margin-right: 0;
 }

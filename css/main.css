@@ -214,6 +214,25 @@ img {
 }
 
 .page-header {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0 10px;
+  background-color: #ffffff;
+  z-index: 50;
+}
+
+@media screen and (max-width: 767px) {
+  width: 100%;
+  height: 48px;
+}
+
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -1470,5 +1489,30 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+
+.body.modal-open {
+  overflow: hidden;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 50;
+  background-color: yellow;
+}
+
+.menu-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: pink;
 }
 /*# sourceMappingURL=main.css.map */
