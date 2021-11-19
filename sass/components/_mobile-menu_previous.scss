@@ -24,21 +24,13 @@
 // .logo {
 //   margin-left: 15px;
 // }
-// .nav-lists {
-//   position: relative;
-//   display: block;
-//   justify-content: space-between;
-//   align-items: center;
-//   outline: 1px solid green;
-//   height: 60px;
-//   z-index: 8;
+
+// .site-nav {
+//   margin-top: 48px;
 // }
-.site-nav {
-  margin-top: 48px;
-}
-.site-nav__link--current::after {
-  display: none;
-}
+// .site-nav__link--current::after {
+//   display: none;
+// }
 // @media screen and (max-width: 767px) {
 //   .menu-toggle {
 //     display: block;
