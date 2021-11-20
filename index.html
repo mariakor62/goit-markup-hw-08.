@@ -53,15 +53,15 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="menu-toggle js-open-menu aria-expanded=" false"
-                aria-controls="mobile-menu"><span></span>
-                <svg class="menu-toggle__icon" width="19" height="19" aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="./images/icons.svg#icon-close_icon-1"></use>
-                    <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
-                </svg>
-            </button>
-        </nav>
 
+        </nav>
+        <button type="button" class="menu-toggle" js-open-menu aria-expanded=" false" aria-controls="mobile-menu"
+            data-menu-toggle><span></span>
+            <svg class="menu-toggle__icon" width="19" height="19" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./images/icons.svg#icon-close_icon-1"></use>
+                <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+        </button>
     </header>
     <main>
         <!--Герой-->
@@ -528,7 +528,7 @@
     </div>
 
     <!--Mobile-menu-->
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container data-menu js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu"></button>
         <!-- <div class="menu-toggle">
             <div class="mob-menu">
