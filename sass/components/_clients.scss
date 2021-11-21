@@ -17,7 +17,6 @@
   width: calc((100% - 2 * 30px) / 2);
   margin: 15px;
 }
-
 .customers__title {
   font-style: normal;
   font-weight: bold;
@@ -28,43 +27,38 @@
   color: $title-color;
   margin-bottom: 30px;
 }
-// .customers__title {
-//   @media screen and (max-width: 768px) {
-//     font-size: 36px;
-//     line-height: 42px;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: $title-color;
-//     margin-bottom: 50px;
-//   }
-// }
-// .customers__list {
-//   width: 100%;
-//   // margin-bottom: 30px;
-
-//   margin-left: 30px;
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//     @include centeredFlex(flex);
-//   }
-// }
-// .customers__title {
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 36px;
-//   line-height: 42px;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   color: $title-color;
-//   margin-bottom: 50px;
-//   @media screen and (min-width: 768px) {
-//   }
-// }
-// .customers__logo {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+.customers__logo {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.customers__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.customers__title {
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom: 50px;
+  }
+}
 
 .customers__link {
   @include centeredFlex(flex);
@@ -77,6 +71,9 @@
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 }
 
@@ -86,5 +83,15 @@
   .customers__link:hover &,
   .customers__link:focus & {
     fill: $accent-color;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .customers__list {
+    @include centeredFlex(flex);
   }
 }
