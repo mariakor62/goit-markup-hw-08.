@@ -1,5 +1,8 @@
 .team {
   padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+  }
 }
 .team .container {
   padding-top: 60px;
