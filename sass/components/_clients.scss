@@ -1,8 +1,9 @@
 .customers {
   padding: 0;
 }
-.customers__container {
-  padding: 60px 15px 0px;
+.customers .container {
+  box-sizing: border-box;
+  padding-top: 60px 0px 0px 0px;
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     width: 1170px;
@@ -30,7 +31,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-color;
-  margin-bottom: 30px;
+  margin: 60px 0px 30px;
 }
 .customers__logo {
   @media screen and (min-width: 768px) {

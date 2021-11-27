@@ -2,8 +2,9 @@
   padding-top: 60px;
   padding-bottom: 0;
 }
-.features__container {
+.features .container {
   padding: 0 15px;
+  box-sizing: border-box;
 }
 .features__list {
   width: 100%;

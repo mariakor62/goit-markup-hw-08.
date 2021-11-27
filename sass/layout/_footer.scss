@@ -10,6 +10,7 @@
   //  display: block;
   // flex-wrap: wrap;
   margin: 0 15px;
+  box-sizing: content-box;
 }
 
 .form-field {
@@ -20,6 +21,8 @@
   margin-right: 0;
   @media screen and (min-width: 768px) {
     width: 450px;
+    display: flex;
+    flex-wrap: wrap;
     outline: 1px solid yellow;
   }
 }
@@ -48,7 +51,7 @@
 .contact-items {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     // align-items: flex-start;
   }
 }
@@ -82,26 +85,28 @@
   align-items: center;
   margin-bottom: 60px;
   height: 80px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 65px;
-    // flex-wrap: wrap;
-    // display: flex;
-    // justify-content: center;
-    // align-items: ;
-    // @extend %block-centered;
-    // margin-right: 70px;
-    width: 206px;
-    height: 80px;
-    margin-bottom: 0px;
-    // flex-wrap: wrap;
-    // @extend %block-centered;
-    // margin-left: 70px;
-    // width: 206px;
-  }
 }
+//   @media screen and (min-width: 768px) {
+//     width: 450px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: 65px;
+//     // flex-wrap: wrap;
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: ;
+//     // @extend %block-centered;
+//     // margin-right: 70px;
+//     width: 206px;
+//     height: 80px;
+//     margin-bottom: 0px;
+//     // flex-wrap: wrap;
+//     // @extend %block-centered;
+//     // margin-left: 70px;
+//     // width: 206px;
+//   }
+// }
 // .footer-right {
 //   @extend %block-centered;
 //   margin-left: 70px;
