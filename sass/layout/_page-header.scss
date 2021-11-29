@@ -8,7 +8,10 @@
   padding: 10px 0 10px;
   background-color: $bg-color;
 }
-
+.page-header {
+  // border-bottom: 1px solid $color;
+  @include bordered($color);
+}
 .site-nav,
 .header-right__contact {
   @media screen and (max-width: 767px) {
@@ -21,46 +24,71 @@
     display: none;
   }
 }
-.page-header .header-right__contact {
+.site-nav__link--current::after {
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-
-.site-nav__item {
   @media screen and (min-width: 768px) {
-    position: relative;
-    margin: 0px 0px 0px 50px;
-    outline: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $title-color;
+    .page-header {
+      border-bottom: 1px solid $color;
+      // @include bordered($color);
+      &__nav {
+        display: flex;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .site-nav {
+        display: flex;
+        margin-left: 93px;
+        &__link {
+          display: block;
+          padding-top: 32px;
+          padding-bottom: 32px;
+          color: $title-color;
+        }
+      }
+    }
   }
-}
 
-.site-nav__link--current::after {
-  @media screen and (min-width: 767px) {
-    display: none;
-    position: absolute;
-    content: '';
-    display: flex;
-    justify-content: center;
-    // @extend %flexCentered;
-    width: 100%;
-    top: 76px;
-    left: 0;
-    border: 2px solid;
-    border-radius: 4px;
-    background-color: $accent-color;
+  .site-nav__item {
+    @media screen and (min-width: 768px) {
+      position: relative;
+      margin: 0px 0px 0px 50px;
+      outline: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $title-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .site-nav__link--current::after {
+      position: absolute;
+      content: '';
+      display: flex;
+      justify-content: center;
+      // @extend %flexCentered;
+      width: 100%;
+      top: 76px;
+      left: 0;
+      border: 2px solid;
+      border-radius: 4px;
+      background-color: $accent-color;
+    }
   }
 }
 .header-right {
-  @include centeredFlex(flex);
-  margin-left: auto;
-  &__contact {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include centeredFlex(flex);
+    margin-left: auto;
+    &__contact {
+      margin-left: 30px;
+    }
   }
 }
 .header-right__contact:last-child {
@@ -68,44 +96,56 @@
 }
 
 .header-right__contact {
-  @extend %flexCentered;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    // @extend %flexCentered;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 .header-right__link {
-  @extend %align-center;
-  height: 12px;
-  color: $text-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    // @extend %align-center;
+    height: 12px;
+    color: $text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $accent-color;
+    }
   }
 }
 .header-right__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-  fill: $text-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .header-right__link:hover &,
-  .header-right__link:focus & {
-    cursor: pointer;
-    fill: $accent-color;
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: $text-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .header-right__link:hover &,
+    .header-right__link:focus & {
+      cursor: pointer;
+      fill: $accent-color;
+    }
   }
 }
-
-.site-nav__link--current {
-  color: $accent-color;
-}
-.site-nav__link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
+@media screen and (min-width: 768px) {
+  .site-nav__link--current {
     color: $accent-color;
+  }
+  .site-nav__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 .smartphone:hover,

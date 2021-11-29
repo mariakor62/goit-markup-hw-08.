@@ -1,12 +1,45 @@
+.projects {
+  padding: 60px 0px 60px 0;
+}
+.site-nav,
+.header-right__contact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+    &__link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: $title-color;
+    }
+  }
+}
+
+.projects-nav .container {
+  padding-top: 40px;
+  width: 100%;
+}
 .site-button {
   border-style: none;
 }
 .projects-nav__list {
-  @extend %flexCentered;
-  margin-bottom: 50px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // margin-bottom: 40px;
+  // margin-bottom: 50px;
 }
-.projects-nav__item:not(:last-child) {
+// .projects-nav__item:not(:first-child) {
+//   margin-right: 8px;
+//   margin-bottom: 15px;
+// }
+.projects-nav__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .projects-nav__button {
   font-weight: 500;
@@ -43,20 +76,42 @@
 // Projects-Cards
 
 .content {
-  @extend %flex-wrap;
-  margin-right: -30px;
-  margin-top: -30px;
+  max-width: 100%;
+  padding-top: 15px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-right: -30px;
+  margin-bottom: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-top: -30px;
+    }
+  }
 }
 .content__items {
-  flex-basis: calc(100% / 3 - 30px);
-
-  margin-right: 30px;
-  margin-top: 30px;
-  background: $bg-color;
-  box-sizing: border-box;
-  &:hover,
-  &:focus {
-    box-shadow: $base-box-shadow;
+  max-width: 100%;
+  margin-right: 0;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+    background: $bg-color;
+    box-sizing: border-box;
+    &:hover,
+    &:focus {
+      box-shadow: $base-box-shadow;
+    }
   }
 
   .content__card {
@@ -64,6 +119,9 @@
     border-bottom: 1px solid $border-color;
     border-left: 1px solid $border-color;
     padding: 20px 24px;
+    @media screen and (min-width: 768px) {
+      padding: 20px 24px auto;
+    }
   }
   .content__title {
     font-weight: 700;

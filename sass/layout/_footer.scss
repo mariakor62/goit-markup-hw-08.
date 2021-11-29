@@ -3,14 +3,23 @@
   // flex-wrap: wrap;
   padding: 60px 0;
   background-color: $secondary-color;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 60px 0 60px;
+    &-contacts {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
+
 .footer-contacts .container {
+  // @media screen and (min-width: 768px) {
   width: 100%;
   // padding: 60px 0 60px;
   //  display: block;
   // flex-wrap: wrap;
   margin: 0 15px;
-  box-sizing: content-box;
 }
 
 .form-field {
@@ -19,13 +28,22 @@
   flex-direction: column;
   align-items: center;
   margin-right: 0;
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    outline: 1px solid yellow;
-  }
 }
+// @media screen and (min-width: 768px) {
+// width: 450px;
+
+// .form-field {
+//   @media screen and (min-width: 768px) {
+//     outline: 1px solid yellow;
+//     width: 450px;
+//     display: column;
+//     align-items: center;
+//     margin-right: 0;
+//   }
+//   // flex-direction: row;
+//   // flex-wrap: wrap;
+//   outline: 1px solid yellow;
+// }
 
 .sign-in {
   display: flex;
@@ -38,11 +56,16 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
-  .contact-items {
-    @extend %block-centered;
-    // &__address {
-    // margin-top: 20px;
-    // }
+}
+.contact-items {
+  @media screen and (min-width: 1200px) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    // @extend %block-centered;
+    &__address {
+      margin-top: 20px;
+    }
     &__text {
       margin-bottom: 9px;
     }

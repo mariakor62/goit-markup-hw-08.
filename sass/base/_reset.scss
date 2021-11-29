@@ -73,7 +73,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-  box-sizing: content-box;
+  box-sizing: border-box;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
