@@ -19,6 +19,9 @@
   //  display: block;
   // flex-wrap: wrap;
   margin: 0 15px;
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
 }
 .footer-contacts .container {
   @media screen and (min-width: 768px) {
@@ -174,6 +177,12 @@
   &:focus {
     cursor: pointer;
     color: $accent-color;
+  }
+}
+.contact-items__details {
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 0px;
   }
 }
 .contacts-tel {

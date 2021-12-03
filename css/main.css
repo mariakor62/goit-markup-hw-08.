@@ -979,9 +979,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team__list {
-    margin-bottom: 30px;
     margin-top: 50px;
-    padding: 0 15px;
+    margin-left: -30px;
   }
 }
 
@@ -1004,7 +1003,7 @@ img {
   .team__list .member {
     width: 768px;
     width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
+    margin-left: 30px;
     background: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1052,6 +1051,7 @@ img {
 @media screen and (min-width: 1200px) {
   .customers .container {
     width: 1170px;
+    padding: 94px 0px 94px;
     margin-bottom: 0px;
   }
 }
@@ -1080,6 +1080,12 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   margin: 60px 0px 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1126,7 +1132,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1205,6 +1211,12 @@ img {
 .footer-contacts .container {
   width: 100%;
   margin: 0 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts .container {
+    width: 1170px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1403,6 +1415,13 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-items__details {
+    width: 231px;
+    margin-right: 0px;
+  }
+}
+
 .contacts-tel {
   font-weight: 400;
   font-size: 14px;
@@ -1438,13 +1457,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form-field {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 358px;
   }
 }
@@ -1468,6 +1480,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-in {
+    width: 200px;
   }
 }
 
@@ -1534,7 +1552,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .fields .email-box {
+  .fields-box {
     width: 358px;
   }
 }
@@ -1590,7 +1608,19 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer .form-field {
-    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0px 0px 0px 93px;
   }
 }
 
