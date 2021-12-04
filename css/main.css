@@ -1433,6 +1433,7 @@ img {
   .contact-items__details {
     width: 231px;
     margin-right: 0px;
+    outline: none;
   }
 }
 
