@@ -713,6 +713,14 @@ img {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1200px) {
+  .projects-nav__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .projects-nav__item {
   margin-right: 8px;
   margin-bottom: 15px;
@@ -825,6 +833,12 @@ img {
 @media screen and (min-width: 768px) {
   .content__items .content__card {
     padding: 20px 24px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content__items .content__card {
+    padding: 20px 20px;
   }
 }
 
@@ -1417,6 +1431,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contact-items__details {
+    outline: 1px solid yellow;
     width: 231px;
     margin-right: 0px;
   }

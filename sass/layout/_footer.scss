@@ -181,6 +181,7 @@
 }
 .contact-items__details {
   @media screen and (min-width: 1200px) {
+    outline: 1px solid yellow;
     width: 231px;
     margin-right: 0px;
   }
