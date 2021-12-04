@@ -1431,7 +1431,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contact-items__details {
-    outline: 1px solid yellow;
     width: 231px;
     margin-right: 0px;
   }
